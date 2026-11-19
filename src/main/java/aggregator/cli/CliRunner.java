@@ -76,8 +76,9 @@ public class CliRunner {
 
         if (flags.containsKey("symbol")) queryParams.put("symbol", flags.get("symbol"));
         if (flags.containsKey("ids")) queryParams.put("ids", flags.get("ids"));
-        if (flags.containsKey("search")) queryParams.put("search", flags.get("search"));
         if (flags.containsKey("vs_currency")) queryParams.put("vs_currency", flags.get("vs_currency"));
+        if (flags.containsKey("coin")) queryParams.put("coin", flags.get("coin"));
+        if (flags.containsKey("quotes")) queryParams.put("quotes", flags.get("quotes"));
 
         return new CliArgs(action, sources, format, mode, sourceFilter, queryParams);
     }
